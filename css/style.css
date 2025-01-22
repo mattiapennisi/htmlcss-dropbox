@@ -92,6 +92,10 @@
 
 body {
     position: relative;
+
+    * {
+        /* border: 1px dotted black; */
+    }
 }
 
 a {
@@ -107,32 +111,37 @@ a {
     z-index: 100;
     font-size: 0.75rem;
     align-items: center;
-
-    .h-e-m {
-        height: 30px;
-        margin: 10px;
-    }
+    text-align: center;
 
     #navleft {
         text-align: center;
         align-content: center;
+        gap: 20px;
+        padding: 0 0 0 20px;
 
         a {
-            height: 10px;
             color: #000;
         }
 
         #logo-img {
+            width: 20px;
+            max-width: 100%;
+            max-height: 100%;
         }
     }
 
     #navright {
         text-align: center;
         align-content: center;
+        gap: 20px;
+        padding: 0 20px 0 0;
 
         a {
-            height: 10px;
             color: #000;
+
+            &.btn {
+                color: #fff;
+            }
         }
     }
 }
