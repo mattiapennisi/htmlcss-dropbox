@@ -1,0 +1,115 @@
+:root {
+    border: 1px dotted black;
+}
+
+/* Utility classes */
+
+.min-m {
+    margin: 5px;
+}
+
+.f-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.f-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-j-start {
+    justify-content: start;
+}
+
+.f-j-center {
+    justify-content: center;
+}
+
+.f-j-end {
+    justify-content: end;
+}
+
+.f-j-sp {
+    justify-content: space-between;
+}
+
+.f-j-sa {
+    justify-content: space-around;
+}
+
+.f-j-se {
+    justify-content: space-evenly;
+}
+
+.f-a-start {
+    align-items: start;
+}
+
+.f-a-center {
+    align-items: center;
+}
+
+.f-a-end {
+    align-items: end;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semibold {
+    font-weight: 500;
+}
+
+.col1 {
+    width: calc(100%/12*1);
+}
+
+.col2 {
+    width: calc(100%/12*2);
+}
+
+.col3 {
+    width: calc(100%/12*3);
+}
+
+.col4 {
+    width: calc(100%/12*4);
+}
+
+.col5 {
+    width: calc(100%/12*5);
+}
+
+.col6 {
+    width: 50%;
+}
+
+.col7 {
+    width: calc(100%/12*7);
+}
+
+.col8 {
+    width: calc(100%/12*8);
+}
+
+.col9 {
+    width: calc(100%/12*9);
+}
+
+.col10 {
+    width: calc(100%/12 *10);
+}
+
+.col11 {
+    width: calc(100%/12*11);
+}
+
+.col12 {
+    width: 100%;
+}
