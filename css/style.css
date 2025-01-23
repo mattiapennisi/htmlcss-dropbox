@@ -94,7 +94,7 @@ body {
     position: relative;
 
     * {
-        /* border: 1px dotted black; */
+        border: 1px dotted black;
     }
 }
 
@@ -141,6 +141,7 @@ a {
 
             &.btn {
                 color: #fff;
+                padding: 5px 10px;
             }
         }
     }
@@ -156,12 +157,26 @@ a {
 
 
         #jumbo-title {
-            font-size: 3.5rem;
+            font-size: 3.7rem;
             margin: auto auto 50px auto;
         }
 
         #jumbo-text {
+            font-size: 0.7rem;
+            line-height: 1rem;
+            gap: 20px;
+            position: relative;
 
+            a {
+                width: fit-content;
+                padding: 9px;
+            }
+
+            i {
+                position: absolute;
+                bottom: 10px;
+                font-size: 2.1rem;
+            }
         }
 
         #jumbo-img {
@@ -216,7 +231,7 @@ a {
     justify-content: end;
 }
 
-.f-j-sp {
+.f-j-sb {
     justify-content: space-between;
 }
 
