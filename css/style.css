@@ -6,6 +6,7 @@
     --main-bg: #fff;
     --footer-bg: #000;
     --btns: #0061fe;
+    --border-sec: rgb(209, 209, 209);
 }
 
 /* Debug */
@@ -212,12 +213,15 @@ a {
     /* Plans section */
     #plans {
 
+        padding: 30px 0 0 0;
+        gap: 50px;
+
         h2 {
             font-size: 2rem;
         }
 
         #plans-opt {
-            gap: 15px;
+            gap: 5px;
         }
 
         .circle-b {
@@ -231,7 +235,7 @@ a {
 
             .circle-s {
             background-color: #fff;
-            width: 9px;
+            width: 8px;
             aspect-ratio: 1;
             border-radius: 50px;
             content: normal;
@@ -247,20 +251,48 @@ a {
             border-radius: 50px;
             content: normal;
             color: transparent;
-            border: 1px solid rgb(143, 143, 143);
+            border: 1px solid var(--border-sec);
+            margin: 0 0 0 50px;
         }
 
         #cards-cont {
-            gap: 10px;
-            border: 1px solid black;
+            gap: 30px;
+
+            .card {
+                border: 1px solid var(--border-sec);
+                font-size: 0.7rem;
+            }
 
             .card-type {
                 gap: 10px;
-                border-bottom: 1px solid black;
+                padding: 10px;
             }
 
             .card-main {
+                border-top: 1px solid var(--border-sec);
+                padding: 20px;
+                gap: 15px;
+            }
 
+            .card-title {
+                font-size: 1.5rem;
+            }
+
+            .card-price {
+                font-size: 1rem;
+            }
+
+            .card-time {
+                color: var(--border-sec);
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+
+            .card-buynow {
+                a {
+                    color: var(--btns);
+                    text-decoration: underline;
+                }
             }
         }
 
@@ -404,4 +436,8 @@ a {
 
 .fa-check {
     color: green;
+}
+
+.fa-user, .fa-users, .fa-folder, .fa-share-nodes, .fa-building, .fa-check {
+    margin-right: 10px;
 }
