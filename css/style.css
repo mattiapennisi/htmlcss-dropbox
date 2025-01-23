@@ -11,22 +11,11 @@
 
 /* Debug */
 .debug {
-
     position: relative;
 
     * {
         border: 1px dotted black;
         min-height: 50px;
-    }
-
-    #header {
-    }
-
-    #main {
-
-    }
-
-    #footer {
     }
 
     /* Utility classes */
@@ -218,6 +207,7 @@ a {
 
         #plans-opt {
             gap: 5px;
+            font-size: 0.9rem;
         }
 
         .circle-b {
@@ -262,6 +252,7 @@ a {
             .card-type {
                 gap: 10px;
                 padding: 10px;
+                font-size: 1rem;
             }
 
             .card-main {
@@ -323,6 +314,29 @@ a {
             .card-type {
                 gap: 10px;
                 padding: 10px;
+                font-size: 1rem;
+            }
+
+            .card-main {
+                border-top: 1px solid var(--border-sec);
+                padding: 20px;
+
+                .card-left {
+                    gap: 15px;
+
+                    .card-title {
+                        font-size: 1.5rem;
+                    }
+
+                    .card-text {
+                        margin-top: 30px;
+                        font-size: 0.7rem;
+                    }
+                }
+
+                .card-right {
+                    font-size: 0.7rem;
+                }
             }
         }
 
