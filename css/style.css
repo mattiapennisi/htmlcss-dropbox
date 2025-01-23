@@ -425,14 +425,17 @@ a {
     padding: 50px auto;
 
     #f-cont {
+        padding: 50px 0px;
 
         ul {
             font-weight: 700;
             font-size: 1.2rem;
+            margin-bottom: 50px;
 
             li {
                 font-weight: 100;
                 font-size: 0.8rem;
+                margin: 15px 0;
             }
         }
     }
