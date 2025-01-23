@@ -421,8 +421,21 @@ a {
 /* Footer */
 #footer {
     background-color: var(--footer-bg);
-    min-height: 100px;
     color: #fff;
+    padding: 50px auto;
+
+    #f-cont {
+
+        ul {
+            font-weight: 700;
+            font-size: 1.2rem;
+
+            li {
+                font-weight: 100;
+                font-size: 0.8rem;
+            }
+        }
+    }
 }
 
 /* Utility classes */
