@@ -91,11 +91,6 @@ body {
     }
 }
 
-/* General tags */
-a {
-    text-decoration: none;
-}
-
 /* Header */
 #header {
     background-color: var(--header-bg);
@@ -135,7 +130,7 @@ a {
             align-self: center;
 
             &:hover {
-                transform: scale(1.1);
+                transform: scale(1.02);
             }
         }
 
@@ -371,8 +366,8 @@ a {
 
     /* Dropbox Business section */
     #business {
-
         margin-bottom: 50px;
+        gap: 1rem;
         
         #business-title {
             font-size: 1.8rem;
@@ -383,6 +378,11 @@ a {
             padding: 2rem;
             margin: 0 -2rem;
             gap: 10px;
+
+            img {
+                padding: 1rem;
+                width: 80%;
+            }
         } 
 
         .bus-title {
@@ -436,6 +436,26 @@ a {
                 font-weight: 100;
                 font-size: 0.8rem;
                 margin: 15px 0;
+
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        #f-lang-cont {
+            font-size: 0.7rem;
+            color: var(--text-sec);
+            padding: 30px 0 20px 0;
+
+            #f-lang {
+                width: 150px;
+                border-top: 1px solid #fff;
+                margin: 30px 0 20px 0;
             }
         }
     }
@@ -575,6 +595,10 @@ a {
     color: var(--btns);
 }
 
-.fa-user, .fa-users, .fa-folder, .fa-share-nodes, .fa-building, .fa-check {
+.fa-user, .fa-users, .fa-folder, .fa-share-nodes, .fa-building, .fa-check, .fa-earth-americas {
     margin-right: 10px;
+}
+
+.fa-caret-down {
+    margin-left: 10px;
 }
