@@ -132,7 +132,7 @@ a {
             height: var(--header-height);
             display: flex;
 
-            &:hover {
+            &:not(.nothover):hover {
                 border-bottom: 1px solid black;
             }
 
@@ -140,16 +140,20 @@ a {
                 align-self: center;
             }
 
-            &.btn {
-                color: #fff;
-                padding: 5px 10px;
+            &>.btn {
+                padding: 5px 9px;
+
+                &:hover {
+                    background-color: #3b84fa;
+                }
             }
         }
 
-        #logo-img {
-            width: 15px;
+        #logo-image {
+            width: 90px;
             max-width: 100%;
             max-height: 100%;
+            align-self: center;
         }
     }
 }
@@ -208,13 +212,6 @@ a {
 #footer {
     background-color: var(--footer-bg);
     min-height: 100px;
-}
-
-/* General classes */
-
-.btn {
-    color: #fff;
-    background-color: var(--btns);
 }
 
 /* Utility classes */
@@ -335,4 +332,11 @@ a {
 
 .col12 {
     width: 100%;
+}
+
+/* General classes */
+
+.btn {
+    color: #fff;
+    background-color: var(--btns);
 }
