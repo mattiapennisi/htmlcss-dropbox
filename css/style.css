@@ -8,6 +8,7 @@
     --btns: #0061fe;
 }
 
+/* Debug */
 .debug {
 
     position: relative;
@@ -98,10 +99,12 @@ body {
     }
 }
 
+/* General tags */
 a {
     text-decoration: none;
 }
 
+/* Header */
 #header {
     background-color: var(--header-bg);
     height: var(--header-height);
@@ -132,6 +135,18 @@ a {
             height: var(--header-height);
             display: flex;
 
+            
+        #logo-image {
+            width: 90px;
+            max-width: 100%;
+            max-height: 100%;
+            align-self: center;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
             &:not(.nothover):hover {
                 border-bottom: 1px solid black;
             }
@@ -148,20 +163,15 @@ a {
                 }
             }
         }
-
-        #logo-image {
-            width: 90px;
-            max-width: 100%;
-            max-height: 100%;
-            align-self: center;
-        }
     }
 }
 
+/* Main */
 #main {
     background-color: var(--main-bg);
     margin: var(--header-height) 0 0 0;
 
+    /* Jumbo section */
     #jumbo {
         background-color: var(--jumbo-bg);
         padding: 75px 0 0 0;
@@ -197,18 +207,64 @@ a {
         }
     }
 
+    /* Space-rule div */
     #space-rule {
         border-bottom: 1px solid rgb(255, 244, 244);
         height: 80px;
     }
 
+    /* Plans section */
     #plans {
+        * {
+            margin: 20px 0;
+        }
+
         h2 {
             font-size: 2rem;
         }
+
+        #plans-opt {
+            gap: 15px;
+        }
+
+        .circle-b {
+            background-color: var(--btns);
+            width: 15px;
+            aspect-ratio: 1;
+            border-radius: 50px;
+            content: normal;
+            align-self: center;
+            position: relative;
+
+            .circle-s {
+            background-color: #fff;
+            width: 9px;
+            aspect-ratio: 1;
+            border-radius: 50px;
+            content: normal;
+            align-self: center;
+            position: absolute;
+            top: -17px;
+            left: 3px;
+            z-index: 2;
+            }
+        }
+
+        .circle-f {
+            background-color: #fff;
+            width: 15px;
+            aspect-ratio: 1;
+            border-radius: 50px;
+            content: normal;
+            color: transparent;
+            border: 1px solid rgb(143, 143, 143);
+        }
+
+
     }
 }
 
+/* Footer */
 #footer {
     background-color: var(--footer-bg);
     min-height: 100px;
@@ -333,8 +389,6 @@ a {
 .col12 {
     width: 100%;
 }
-
-/* General classes */
 
 .btn {
     color: #fff;
