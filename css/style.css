@@ -7,6 +7,8 @@
     --footer-bg: #000;
     --btns: #0061fe;
     --border-sec: rgb(209, 209, 209);
+    --text-sec: grey;
+    --partner-sec: rgb(61, 61, 61);
 }
 
 /* Debug */
@@ -270,7 +272,7 @@ a {
             }
 
             .card-time {
-                color: var(--border-sec);
+                color: var(--text-sec);
                 font-size: 1rem;
                 margin-bottom: 20px;
             }
@@ -342,7 +344,33 @@ a {
 
     }
 
-    /* Team section */
+    /* Partner section */
+    #partner {
+        margin: 100px auto;
+
+        #partner-right {
+            padding: 50px;
+            gap: 20px;
+
+            #partner-title {
+                font-size: 1.1rem;
+            }
+
+            #partner-text {
+                font-size: 0.9rem;
+                color: var(--partner-sec);
+            }
+
+            #partner-btn {
+                color: var(--partner-sec);
+                background-color: #fff;
+                border: 1px solid var(--partner-sec);
+            }
+        }
+    }
+
+    /* Dropbox Business section */
+    
 }
 
 /* Footer */
