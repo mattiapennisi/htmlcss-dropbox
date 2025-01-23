@@ -157,10 +157,6 @@ a {
 
             &>.btn {
                 padding: 5px 9px;
-
-                &:hover {
-                    background-color: #3b84fa;
-                }
             }
         }
     }
@@ -215,9 +211,6 @@ a {
 
     /* Plans section */
     #plans {
-        * {
-            margin: 20px 0;
-        }
 
         h2 {
             font-size: 2rem;
@@ -243,9 +236,6 @@ a {
             border-radius: 50px;
             content: normal;
             align-self: center;
-            position: absolute;
-            top: -17px;
-            left: 3px;
             z-index: 2;
             }
         }
@@ -260,6 +250,19 @@ a {
             border: 1px solid rgb(143, 143, 143);
         }
 
+        #cards-cont {
+            gap: 10px;
+            border: 1px solid black;
+
+            .card-type {
+                gap: 10px;
+                border-bottom: 1px solid black;
+            }
+
+            .card-main {
+
+            }
+        }
 
     }
 }
@@ -393,4 +396,12 @@ a {
 .btn {
     color: #fff;
     background-color: var(--btns);
+
+    &:hover {
+        background-color: #3b84fa;
+    }
+}
+
+.fa-check {
+    color: green;
 }
